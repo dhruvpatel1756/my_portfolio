@@ -1,19 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible " content="ie=edge">
-        <title>Dhruv's portfolio</title>
-        <link rel="stylesheet" href="website.css">
+        <title>Dhruv's Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 
-      </head>
-    <body>
-    <div id="header"> 
-  <div class="container">
-    <nav> 
       
-      <img src="images/logoo.png" class="logo">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    </head>
+    
+      
+   <body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader-cube">
+      <div class="front"></div>
+      <div class="back"></div>
+      <div class="right"></div>
+      <div class="left"></div>
+      <div class="top"></div>
+      <div class="bottom"></div>
+    </div>
+    <div class="loading-text">Welcome to My Portfolio..</div>
+  </div>
+
+  <!-- Header -->
+  <div id="header">
+  <div class="container">
+    <nav>
+      <div class="logo-wrapper">
+        <div class="text-logo">Dhruv Portfolio</div>
+      </div>
       <ul id="sidemenu">
         <li><a href="#header">HOME</a></li>
         <li><a href="#about">ABOUT</a></li>
@@ -25,31 +47,30 @@
       <i class="fas fa-bars" onclick="openmenu()"></i>
     </nav>
 
-    <!-- Flex container for text and image -->
+    <!-- Hero Section -->
     <div class="hero-flex">
       <div class="header-text">
-        <p>Website Designer</p>
+        <h2>Website Designer</h2>
         <h1>Hi, I'm <span>Dhruv Patel</span><br>from India</h1>
-        <h2>Dinar id:DV05WD00053</h2>
       </div>
-      <div class="about-col-3">
-        <img src="images/mybackphoto.png" alt="Dhruv Patel">
+      <div class="header-image">
+        <img src="images/aboutphoto.jpeg" alt="Dhruv Patel">
       </div>
-      
     </div>
   </div>
 </div>
+
+</body>
 
     <!---------------about------------->
     <div id="about">
       <div class="container">
         <div class="row">
           <div class="about-col-1">
-            
-            <img src="images/aboutphoto.jpeg">
+            <img src="images/mybackphoto.png">
           </div>
           <div class="about-col-2">
-            <h2 class="sub-title">About Me </h2>
+            <h1 class="sub-title">About Me</h1>
 <p>I’m a Website designer focused on creating engaging, user-centered designs. 
 I blend creativity with usability, ensuring every product I design 
 not only looks good but feels intuitive to use.<br>
@@ -62,23 +83,28 @@ When I'm not working, you’ll find me exploring new tech trends, improving my s
  or sipping coffee while brainstorming my next big idea.
 </p>
 <div class="tab-titles">
-<P class="tab-links active-link" onclick="opentab('skills')">Skills</P>
-<P class="tab-links" onclick="opentab('education')">Education</P>
-
+  <p class="tab-links active-link" data-tab="skills">Skills</p>
+  <p class="tab-links" data-tab="experience">Experience</p>
+  <p class="tab-links" data-tab="education">Education</p>
 </div>
+
 <div class="tab-contents active-tab" id="skills">
   <ul>
     <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-    <li><span>Web Development</span><br>Web app evelopment</li>
-    <li><span>App Development</span><br>Building Android/iot apps</li>
+    <li><span>Web Development</span><br>Web app development</li>
+    <li><span>App Development</span><br>Building Android/IoT apps</li>
+  </ul>
+</div>
 
-
+<div class="tab-contents" id="experience">
+  <ul>
+    <li><span>June-2025 - Current</span><br>Web Developet Internship at Pratinik Infotech</li>
   </ul>
 </div>
 
 <div class="tab-contents" id="education">
   <ul>
-    <li><span>2023</span><br>B.TECH in Information Technology from Sankalchand Patel Collage Visnagar</li>
+    <li><span>2023-2027</span><br>B.TECH in Information Technology from Sankalchand Patel College, Visnagar</li>
   </ul>
 </div>
           </div>
@@ -88,9 +114,9 @@ When I'm not working, you’ll find me exploring new tech trends, improving my s
     </div>
 
     <!---------------------service------------>
-    <div id="services">
+     <div id="services">
       <div class="container">
-              <h2 class="sub-title">MY SERVICES</h2>
+              <h1 class="sub-title">My Services</h1>
               <div class="services-list">
                 <div>
                   <i class="fas fa-code"></i>
@@ -131,13 +157,13 @@ When I'm not working, you’ll find me exploring new tech trends, improving my s
     <!---------portfolio---------->
     <div id="portfolio">
       <div class="container">
-        <h2 class="sub-title">MY WORK</h2>
+        <h1 class="sub-title">My Work</h1>
         <div class="work-list">
           <div class="work">
           <img src="images/social.jpg">
           <div class="layer">
             <h3>Social Media App</h3>
-            <p>The app connects you to the talented people around the world.
+            <p>The app connects you yo the talented people around the world.
               download if from play store.
             </p>
                        <a href="#"><i class="fas fa-external-link-alt"></i></a>       
@@ -169,8 +195,7 @@ When I'm not working, you’ll find me exploring new tech trends, improving my s
           </div>
 </div>
         </div>
-<a href="#" class="btn">See more</a>
-
+       
 
       </div>
 
@@ -180,23 +205,28 @@ When I'm not working, you’ll find me exploring new tech trends, improving my s
   <div class="container">
     <div class="row">
       <div class="contact-left">
-        <h2 class="sub-title">Contact Me</h2>
-        <p><i class="fa-solid fa-envelope"></i> dhruvpatel170506@gmail.com</p>
-        <p><i class="fa-solid fa-phone"></i> 9737484673</p>
-         <div class="social-icons">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fas fa-paper-plane"></i> dhruvpatel170506@gmail.com</p>
+        <p><i class="fas fa-phone-square-alt"></i>9737484673</p>
+        <div class="social-icons">
           <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
           <a href="https://whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+
         </div>
+    
+        </form>
       </div>
 
 
       <div class="contact-right">
         <form name="submit-to-google-sheet">
           <input type="text" name="Name" placeholder="Your name" required>
-         <input type="email" name="Email" placeholder="Your Email" required>
+         <input type="email" name="Email" placeholder="Your Email ID" required>
+         <input type="number" name="Phone" placeholder="Your Phone Number" required>
+
 
    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-   <button type="submit" class="btn btn2">Submit</button>
+   <center><button type="submit" class="btn btn2">Submit</button></center>
 
         </form>
         <span id="msg"></span>
@@ -206,34 +236,23 @@ When I'm not working, you’ll find me exploring new tech trends, improving my s
 
   </div>
   <div class="copyright">
-    <P>Copyright © Dreamery. Made With <i class="fas fa-heart"></i> by Dhruv Patel</P>
+    <P>Copyright © Dhruv. Made With <i class="fas fa-heart"></i> by Dhruv Patel</P>
   </div>
 </div>
 
-    <script>
-      var tablinks = document.getElementsByClassName("tab-links");
-          var tabcontents = document.getElementsByClassName("tab-contents");
 
+<script>
+  window.addEventListener("load", function () {
+    setTimeout(function () {
+      const loader = document.getElementById("preloader");
+      loader.style.display = "none";
+    }, 3000); // 5000 ms = 5 seconds
+  });
+</script>
 
-          function opentab(tabname)
-          {
-            for(tablink of tablinks)
-          {
-            tablink.classList.remove("active-link");
-          }
-     for(tabcontent of tabcontents)
-          {
-            tabcontent.classList.remove("active-tab");
-          }
-       event.currentTarget.classList.add("active-link");
-       document.getElementById(tabname).classList.add("active-tab");
-          }
-    </script>
-
-    <script>
+<script>
       var sidemenu = document.getElementById("sidemenu");
       function openmenu()
-      
 
       {
         sidemenu.style.right = "0";
@@ -246,7 +265,24 @@ When I'm not working, you’ll find me exploring new tech trends, improving my s
     </script>
 
     <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbzJ7Pe8ZojJHw5mpvXEmZbui20Etcv5vI9KlcCSMTtlxplmnNaQOzYrTMKrpN-K_M4i/exec'
+  const tabLinks = document.querySelectorAll(".tab-links");
+  const tabContents = document.querySelectorAll(".tab-contents");
+
+  tabLinks.forEach(link => {
+    link.addEventListener("click", function () {
+      const tabName = this.getAttribute("data-tab");
+
+      tabLinks.forEach(l => l.classList.remove("active-link"));
+      tabContents.forEach(c => c.classList.remove("active-tab"));
+
+      this.classList.add("active-link");
+      document.getElementById(tabName).classList.add("active-tab");
+    });
+  });
+</script>
+
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxMmL_C_Fkuld34OIfKPAoaX9Tpw1AZnSeZQiN105Wyktgjp3d2QbS8kWphjABH9p7b/exec'
   const form = document.forms['submit-to-google-sheet']
 const msg = document.getElementById("msg")
   form.addEventListener('submit', e => {
@@ -264,6 +300,7 @@ const msg = document.getElementById("msg")
        .catch(error => console.error('Error!', error.message))
   })
 </script>
-   
+
+    
         </body>
 </html>
